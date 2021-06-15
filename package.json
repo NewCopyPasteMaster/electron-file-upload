@@ -10,6 +10,15 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
-    "electron": "^9.1.2"
-  }
+    "electron": "^9.4.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shohan494/electron-file-upload.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/Shohan494/electron-file-upload/issues"
+  },
+  "homepage": "https://github.com/Shohan494/electron-file-upload#readme"
 }

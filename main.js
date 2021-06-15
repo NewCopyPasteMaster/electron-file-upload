@@ -1,7 +1,13 @@
 const { app, BrowserWindow } = require('electron') 
 
+
+
+
+
+
 function createWindow () { 
-// Create the browser window. 
+ 
+	// Fenster erstellen
 const win = new BrowserWindow({ 
 	width: 800, 
 	height: 600, 
@@ -10,21 +16,19 @@ const win = new BrowserWindow({
 	} 
 }) 
 
-// Load the index.html of the app. 
+	// index laden
 win.loadFile('src/index.html') 
 
-// Open the DevTools. 
+	// öffnet DevTools beim Start
 win.webContents.openDevTools() 
 } 
 
-// This method will be called when Electron has finished 
-// initialization and is ready to create browser windows. 
-// Some APIs can only be used after this event occurs. 
-// This method is equivalent to 'app.on('ready', function())' 
+// startet die App wenn alles rdy ist
 app.whenReady().then(createWindow) 
 
-// Quit when all windows are closed. 
+// schließt wenn das Fenster geschlossen wird 
 app.on('window-all-closed', () => { 
+	
 // On macOS it is common for applications and their menu bar 
 // To stay active until the user quits explicitly with Cmd + Q 
 if (process.platform !== 'darwin') { 
